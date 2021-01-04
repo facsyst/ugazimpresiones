@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impresiones Ugaz</title>
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="icon" href="./img/logo.png">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <script  src="./js/validacion.js"></script>
+</head>
+<body>
+
+    <header class="header" id="inicio">
+        <img  src="./img/menu.svg" alt="" class="menu">
+        <nav class="menu-navegacion">
+            <a href="#inicio">Inicio</a>
+            <a href="#servicio">Servicio</a>
+            <a href="#portafolio">Portafolio</a>
+            <a href="#expertos">Expertos</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+        <div class="contenedor head">
+            <h1 class="titulo">Ugaz Impresiones</h1>
+            <p class="copy">Somos una empresa involucrada en el Diseño e Innovación de Gigantografías e Imprenta</p>
+        </div>
+    </header>
+    <main>
+        <section class="contenedor" id="servicio">
+            <h2 class="subtitulo">Nuestro Servicio</h2>
+            <div class="contenedor-servicio">
+                <img src="./img/checklist.svg" alt="">
+                <div class="cheklist-servicio">
+                    <div class="service">
+                        <h3 class="n-service"><span class="number">1</span>Diseño Gráfico</h3>
+                        <p>Somos Innovadores en Diseño Gráfico , convertimos tus ideas en imagen para tu negocio, empresa y organización ya sea privada o entidad del estado , estamos enfocados en marketing de tu empresa , por eso nos dedicamos tiempo completo para el diseño y creación de logos , publicidad y todo tipo de información en general.</p>
+                    </div>
+                    <div class="service">
+                        <h3 class="n-service"><span class="number">2</span>Gigantografías</h3>
+                        <p>Contamos con la mejor tecnología de maquinaria de gigantografías, para la obtención de un buen producto de calidad de todo tipo de material para gigantografía. </p>
+                    </div>
+                    <div class="service">
+                        <h3 class="n-service"><span class="number">3</span>Imprenta</h3>
+                        <p>Contamos con la mejor tecnología de maquinaria de imprenta, para la impresión de afiches , boletas de pago , facturas , calendarios , etc.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="gallery" id="portafolio">
+            <div class="contenedor">
+                <h2 class="subtitulo">Galería</h2>
+                <div class="contenedor-galeria">
+                    <img src="./img/uno.png" alt="" class="img-galeria">
+                    <img src="./img/dos.png" alt="" class="img-galeria">
+                    <img src="./img/tres.png" alt="" class="img-galeria">
+                    <img src="./img/cuatro.png" alt="" class="img-galeria">
+                    <img src="./img/cinco.png" alt="" class="img-galeria">
+                    <img src="./img/seis.png" alt="" class="img-galeria">
+                </div>
+            </div>
+        </section>
+        <section class="imagen-light">
+            <img src="./img/close.svg" alt="" class="close">
+            <img  alt="" class="agregar-imagen">
+        </section>
+        <section class="contenedor" id="expertos">
+            <h2 class="subtitulo">Expertos en :</h2>
+            <section class="experts">
+                <div class="cont-expert">
+                    <img src="./img/diseno.svg" alt="" class="img-galeria">
+                    <h3 class="n-expert">Diseño Gráfico</h3>
+                </div>
+                <div class="cont-expert">
+                    <img src="./img/tres.png" alt="" class="img-galeria">
+                    <h3 class="n-expert">Imprenta</h3>
+                </div>
+                <div class="cont-expert">
+                    <img src="./img/dos.png" alt="" class="img-galeria">
+                    <h3 class="n-expert">Gigantografías</h3>
+                </div>
+
+            </section>
+        </section>
+        <section class="contacto" id="contacto">
+            <h2 class="subtitulo">Contacto</h2>
+                <section class="formulario">
+                    <form action="">
+                        <label for="apellidos">
+                            <span>Apellidos</span>
+                            <input class="input" type="text" name="apellidos" id="apellidos" placeholder="Apellidos"  onkeypress="return soloLetras(event)">
+                        </label>
+                        <label for="nombres">
+                            <span>Nombres</span>
+                            <input class="input" type="text" name="nombres" id="nombres"   placeholder="Nombres"  onkeypress="return soloLetras(event)" >
+                        </label>
+                        <label for="dni">
+                            <span>DNI</span>
+                            <input class="input"  name="dni" id="dni"   placeholder="DNI"  maxlength="8" >
+                        </label>
+                        <label for="telefono">
+                            <span>Teléfono</span>
+                            <input class="input" type="number" name="telefono" id="telefono"  placeholder="Teléfono" >
+                        </label>
+                        <label for="email">
+                            <span>Email</span>
+                            <input class="input" type="email" name="email" id="email"  placeholder="Email"  >
+                        </label>
+                        <input class="boton" type="submit" value="Enviar"  >
+                    </form>
+                </section>
+            </div>
+        </section>
+    </main>
+    <footer id="footer">
+        <div class="contenedor footer-content">
+                <div class="contact-us">
+                    <h2 class="brand">UGAZ Impresiones </h2>
+                    <p>Derechos Reservados  2021</p>
+                </div>
+                <div class="social-media">
+                    <a href="https://www.facebook.com/Impresiones-UGAZ-395464137298384" target="_blank" class="social-media-icon">
+                       <i class='bx bxl-facebook'></i>
+                    </a>
+                    <a href="https://www.google.com/maps/contrib/100494311459183767358/photos/@0,0,3a,75y,90t/data=!3m8!1e2!3m6!1sAF1QipNLgrVT7YeajAMKlkgFGEQVjmuQk2PyTZRn1z2G!2e10!3e12!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipNLgrVT7YeajAMKlkgFGEQVjmuQk2PyTZRn1z2G%3Dw365-h273-k-no!7i1599!8i1200!4m3!8m2!3m1!1e1" target="_blank" class="social-media-icon">
+                        <i class='bx bxs-map' ></i>
+                    </a>
+                    <a href="./" class="social-media-icon">
+                        <i class='bx bxl-instagram' ></i>
+                    </a>
+                </div>
+        </div>
+        <div class="line"></div>
+    </footer>
+    <script src="./js/menu.js"></script>
+    <script src="./js/lightbox.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="./js/sweetAlert.js"></script>
+</body>
+</html>
